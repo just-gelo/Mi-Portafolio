@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Mi Portafolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills & Expertise</a></li>
+                    <li><a href="#career">Career Interests</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <div class="home-content">
+            <!-- Image Section -->
+            <div class="home-image">
+                <img src="images/image1.jpg" alt="Michael Angelo Diaz" class="home-img">
+            </div>
+            <div class="home-text">
+                <p>Welcome to my portfolio! I'm <span class="big-text">Michael Angelo Diaz</span>, a passionate Computer Engineering student and aspiring Web Developer. Here, you’ll find more about my skills, experiences, and career interests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Get To Know About Me</h2>
+        <div class="about-text">
+            <p>I’m Michael Angelo Diaz from Taguig, a dedicated 2nd-year Computer Engineering student passionate about technology, innovation, and problem-solving. As the Public Relations Officer for the Computer Engineering Department, I actively engage in fostering connections and promoting collaboration among students. With a strong interest in web development, networking, and data science, I continuously seek opportunities to expand my skills and apply my knowledge to real-world challenges.</p>
+</section>
+    
+<!-- Skills & Interests Section -->
+<section id="skills">
+  <h2>Skills & Interests</h2>
+  <div class="skills-intro">
+    <p>As a passionate learner, I'm currently building my skills through coursework and personal projects. Click each card to learn more about my interests!</p>
+  </div>
+  <div class="skill-cards">
+    <div class="skill-card" onclick="toggleDetail(this)">
+      <div class="icon-title">
+        <i class="icon">🎨</i>
+        <h3>Web Development</h3>
+      </div>
+      <p class="skill-detail">Contributed as the UI/UX Designer for our final project website in Web Development.</p>
+    </div>
+
+    <div class="skill-card" onclick="toggleDetail(this)">
+      <div class="icon-title">
+        <i class="icon">📊</i> <!-- AI-related icon -->
+        <h3>Data Science</h3>
+      </div>
+      <p class="skill-detail">Exploring the world of AI and machine learning for data-driven insights.</p>
+    </div>
+
+    <div class="skill-card" onclick="toggleDetail(this)">
+      <div class="icon-title">
+        <i class="icon">🌐</i>
+        <h3>Networking</h3>
+      </div>
+      <p class="skill-detail">Learning the basics through my Computer Networking 1 course.</p>
+    </div>
+
+    <div class="skill-card" onclick="toggleDetail(this)">
+      <div class="icon-title">
+        <i class="icon">🕹️</i>
+        <h3>Game Development</h3>
+      </div>
+      <p class="skill-detail">Working on a horror game with basic first-person controls. Still in early development.</p>
+    </div>
+  </div>
+</section>
+  
+<!-- Career Interests Section -->
+<section id="career">
+    <h2>Career Interests</h2>
+    <div class="career-grid">
+        <div class="career-card">
+            <span class="career-icon">📈</span>
+            <h3>Business Analyst</h3>
+            <p>Passionate about data-driven decision-making and improving business operations.</p>
+        </div>
+        <div class="career-card">
+            <span class="career-icon">🌐</span>
+            <h3>Web Developer</h3>
+            <p>Dreaming of building engaging websites and impactful user experiences.</p>
+        </div>
+        <div class="career-card">
+            <span class="career-icon">🧠</span>
+            <h3>Data Scientist</h3>
+            <p>Aspired to solve real-world problems using machine learning and data analytics.</p>
+        </div>
+        <div class="career-card">
+            <span class="career-icon">🎮</span>
+            <h3>Game Developer</h3>
+            <p>Interested in building interactive games that entertain and inspire creativity.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+  function toggleDetail(card) {
+    // Toggle the "active" class to show or hide details
+    card.classList.toggle("active");
+  }
+</script>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>📧 Email: <a href="mailto:diazmichaelangelo21@gmail.com">diazmichaelangelo21@gmail.com</a></p>
+      <p>💻 GitHub: <a href="https://github.com/just-gelo" target="_blank">just-gelo</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Michael Angelo Diaz. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
